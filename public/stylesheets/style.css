@@ -1,0 +1,100 @@
+@import "./button.css";
+@import "./card.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+h1, h2 {
+  text-align: center;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #00182D !important;
+
+  /*background-image: url('./../images/background.svg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font: 20px 'Noto Sans', sans-serif;
+
+  background-color: #00182D !important;
+
+  background-image: url('./../images/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#index-navbar{
+  margin-bottom: 3rem;
+}
+
+#idea-text{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 28px;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-control{
+  font-size: 20px;
+  font-style: bold;
+  font-family: 'Noto Sans';
+  font-weight: 800;
+}
+
+.background-dark-l{
+  background-color: #03213bd0  !important;
+  backdrop-filter: saturate(200%) blur(30px);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.qrcodecard {
+  display: inline;
+  width: 250px;
+  height: 250px;
+  outline: solid 3px #0d2338;
+}
+@media screen and (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  label{
+    font-size: 20px;
+  }
+  button{
+    font-size: 1.3em !important;
+  }
+  #index-card{
+    padding-bottom: 5px;
+  }
+  #idea-text{
+    font-size: 1.1em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card-title{
+    font-size: 2.5em;
+  }
+  #index-navbar{
+    margin-bottom: 1rem;
+  }
+  .col{
+    margin-bottom: 0.4rem;
+  }
+  .form-control{
+    flex-basis: 100%;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
